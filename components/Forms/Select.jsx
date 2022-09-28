@@ -13,7 +13,7 @@ const Select = ({ register, errors, field }) => {
                 required={field.required}
             >
                 {field?.options?.map((option, index) => (
-                    <option value={option.value}>{option.label}</option>
+                    <option value={option.value} key={index}>{option.label}</option>
                 ))}
             </select>
             <Error errors={errors} field={field} />
