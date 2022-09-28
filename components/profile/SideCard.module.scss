@@ -15,7 +15,7 @@
         font-size: 22px;
         line-height: 33px;
 
-        color: #304FFE;
+        color: var(--text-primary);
     }
 }
 
@@ -24,7 +24,7 @@
 
     li::before {
         content: "\2022";
-        color: #304FFE;
+        color: var(--text-primary);
         font-weight: bold;
         display: inline-block;
         width: 1em;

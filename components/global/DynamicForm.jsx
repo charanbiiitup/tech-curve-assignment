@@ -8,7 +8,7 @@ import CustomCheckWithText from '../Forms/CustomCheckWithText'
 import Radio from '../Forms/Radio'
 import TextArea from '../Forms/TextArea'
 
-const DynamicForm = ({ data = { name: '', fields: [] }, currentStep, onTabChange }) => {
+const DynamicForm = ({ data = { name: '', fields: [] }, currentStep, onTabChange, formsCount = 1 }) => {
     const { register, handleSubmit, watch, formState: { errors, isValid } } = useForm();
 
     const getField = (field) => {
@@ -50,7 +50,11 @@ const DynamicForm = ({ data = { name: '', fields: [] }, currentStep, onTabChange
     const onSubmit = (data) => {
         console.log(isValid, data)
         if (isValid) {
-            onTabChange(currentStep + 1);
+            if (currentStep === formsCount - 1) {
+                onTabChange(0)
+            } else {
+                onTabChange(currentStep + 1)
+            }
         }
     }
     return (
@@ -61,7 +65,11 @@ const DynamicForm = ({ data = { name: '', fields: [] }, currentStep, onTabChange
                 {data.fields.map((field, index) => {
                     return getField(field)
                 })}
-                <button className='btn' type="submit">Save & Continue </button>
+                {currentStep === formsCount - 1 ? (
+                    <button className='btn' type="submit">Confirm & Submit </button>
+                ) : (
+                    <button className='btn' type="submit">Save & Continue </button>
+                )}
             </form>
         </div>
 

@@ -14,6 +14,11 @@ a {
   box-sizing: border-box;
 }
 
+:root {
+  --text-primary: #304FFE;
+  --text-danger: #FF1744;
+}
+
 .container {
   display: flex;
   max-width: 1200px;
@@ -68,8 +73,8 @@ a {
   color: #FFFFFF;
   cursor: pointer;
 
-  background: #304FFE;
-  border: 1px solid #304FFE;
+  background: var(--text-primary);
+  border: 1px solid var(--text-primary);
   border-radius: 9px;
 }
 
@@ -96,7 +101,7 @@ a {
   font-size: 20px;
   line-height: 30px;
 
-  color: #304FFE;
+  color: var(--text-primary);
 }
 
 .main-con {
@@ -105,7 +110,7 @@ a {
 }
 
 .find {
-  color: #304FFE;
+  color: var(--text-primary);
 }
 
 .content {
@@ -113,7 +118,7 @@ a {
 }
 
 .paragraph {
-  color: #304FFE;
+  color: var(--text-primary);
 }
 
 .ex-pro {
@@ -132,7 +137,7 @@ a {
 }
 
 .form-error {
-  color: red;
+  color: var(--text-danger);
   font-size: 12px;
 }
 
@@ -145,9 +150,9 @@ input[type="file"] {
   padding: 6px 12px;
   cursor: pointer;
 
-  border: 1px solid #304FFE;
+  border: 1px solid var(--text-primary);
   border-radius: 9px;
-  color: #304FFE;
+  color: var(--text-primary);
 }
 
 .grid2x2 {
@@ -155,4 +160,8 @@ input[type="file"] {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   margin-top: 1rem;
+}
+
+.text-danger {
+  color: var(--text-danger);
 }

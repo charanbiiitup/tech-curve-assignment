@@ -5,7 +5,7 @@ import Error from './Error'
 const Select = ({ register, errors, field }) => {
     return (
         <div className="form-group">
-            <label className="form-label">{field.label} {field.required ? '*' : ''}</label>
+            <label className="form-label">{field.label} <span className='text-danger'>{field.required ? '*' : ''}</span></label>
             <select
                 {...register(field.name, { required: field.required })}
                 className="form-control"

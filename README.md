@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tech Curve Frontend Developer Assignment
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This assignment is completed by **Polayya Kurmapu** and is submitted as part of the application for the Frontend Developer position at Tech Curve.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Assignment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The assignment is to create a simple web application that allows the user to edit his profile. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The application is built using React and NextJS Framework.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Used Below plugins to build the application
+1. `react-hook-form` - To handle form validation and submission
+2. `sass` - To handle styling
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How to run the application
 
-## Learn More
+1. Clone the repository
+2. Run `npm install` to install all the dependencies
+3. Run `npm run dev` to start the application in development mode
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+Also this code has been deployed to vercel and can be accessed at [https://tech-curve-assignment-nyec.vercel.app/profile/edit](https://tech-curve-assignment-nyec.vercel.app/profile/edit)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. `components` - Contains all the components used in the application
+2. `pages` - Contains all the pages used in the application
+3. `public` - Contains all the static assets used in the application
+4. `styles` - Contains all the styles used in the application
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Implimented using dynamic form logic.

@@ -5,7 +5,9 @@ import Error from './Error'
 const Text = ({ field, register, errors }) => {
     return (
         <div className="form-group">
-            <label htmlFor={field.name} className="form-label">{field.label} {field.required ? '*' : ''}</label>
+            <label htmlFor={field.name} className="form-label">
+                {field.label} <span className='text-danger'>{field.required ? '*' : ''}</span>
+            </label>
             <input
                 id={field.name}
                 type="text"

@@ -108,24 +108,24 @@ const Edit = () => {
                     "type": "select",
                     "name": "In Business Since",
                     "label": "In Business Since",
-                    "placeholder":"select year",
+                    "placeholder": "select year",
                     "required": true,
-                    "options":[
+                    "options": [
                         {
-                            "label":"2000",
-                            "value":"2000"
+                            "label": "2000",
+                            "value": "2000"
                         },
                         {
-                            "label":"2001",
-                            "value":"2001"
+                            "label": "2001",
+                            "value": "2001"
                         },
                         {
-                            "label":"2002",
-                            "value":"2002"
+                            "label": "2002",
+                            "value": "2002"
                         },
                         {
-                            "label":"2003",
-                            "value":"2003"
+                            "label": "2003",
+                            "value": "2003"
                         }
                     ]
                 },
@@ -134,18 +134,18 @@ const Edit = () => {
                     "name": "Categories",
                     "label": "Categories",
                     "required": true,
-                    "options":[
+                    "options": [
                         {
-                            "label":"Designer",
-                            "value":"Designer"
+                            "label": "Designer",
+                            "value": "Designer"
                         },
                         {
-                            "label":"Developer",
-                            "value":"Developer"
+                            "label": "Developer",
+                            "value": "Developer"
                         },
                         {
-                            "label":"Progammer",
-                            "value":"Programmer"
+                            "label": "Progammer",
+                            "value": "Programmer"
                         }
                     ]
                 },
@@ -154,14 +154,16 @@ const Edit = () => {
                     "name": "Description",
                     "label": "Description",
                     "required": true,
-                    "placeholder":"Add your description here"
+                    "placeholder": "Add your description here",
+                    "helperText": `Briefly describe what your organization does. This can be changed later.
+                    120 maximum characters allowed.`
                 },
                 {
                     "type": "text",
                     "name": "Website",
                     "label": "Website",
                     "required": true,
-                    "placeholder":"Add your website link"
+                    "placeholder": "Add your website link"
                 }
             ]
         },
@@ -173,47 +175,48 @@ const Edit = () => {
                     "name": "Contact Person Name",
                     "label": "Contact Person Name",
                     "required": true,
-                    "placeholder":"Add your contact person name"
+                    "placeholder": "Add your contact person name"
                 },
                 {
                     "type": "text",
                     "name": "Company Email Id",
                     "label": "Company Email Id",
                     "required": true,
-                    "placeholder":"Add your company email Id"
+                    "placeholder": "Add your company email Id"
                 },
                 {
                     "type": "text",
                     "name": "Contact Person Phone Number",
                     "label": "Contact Person Phone Number",
                     "required": true,
-                    "placeholder":"Add your company phone number"
+                    "placeholder": "Add your company phone number"
 
                 },
                 {
                     "type": "radio",
                     "name": "Preffered Time",
                     "label": "Preffered time",
-                    "options":[
+                    "columns": 2,
+                    "options": [
                         {
-                            "type":"radio",
-                            "name":"08:00 to 09:99 AM",
-                            "label":"08:00 to 09:00 AM"
+                            "type": "radio",
+                            "name": "08:00 to 09:99 AM",
+                            "label": "08:00 to 09:00 AM"
                         },
                         {
-                            "type":"radio",
-                            "name":"08:00 to 09:99 AM",
-                            "label":"08:00 to 09:00 AM"
+                            "type": "radio",
+                            "name": "08:00 to 09:99 AM",
+                            "label": "08:00 to 09:00 AM"
                         },
                         {
-                            "type":"radio",
-                            "name":"08:00 to 09:99 AM",
-                            "label":"08:00 to 09:00 AM"
+                            "type": "radio",
+                            "name": "08:00 to 09:99 AM",
+                            "label": "08:00 to 09:00 AM"
                         },
                         {
-                            "type":"radio",
-                            "name":"08:00 to 09:99 AM",
-                            "label":"08:00 to 09:00 AM"
+                            "type": "radio",
+                            "name": "08:00 to 09:99 AM",
+                            "label": "08:00 to 09:00 AM"
                         }
                     ]
                 }
@@ -226,48 +229,48 @@ const Edit = () => {
                     "type": "text",
                     "name": "Company Phone Number",
                     "label": "Company Phone Number",
-
-                    "placeholder":"Add your company phone number"
+                    required: false,
+                    "placeholder": "Add your company phone number"
 
                 },
                 {
                     "type": "text",
                     "name": "Company Email Id",
                     "label": "Company Email Id",
-                    "required": true,
-                    "placeholder":"Add your company email Id"
+                    "required": false,
+                    "placeholder": "Add your company email Id"
                 },
                 {
                     "type": "text",
                     "name": "Company Address 1",
                     "label": "Company Address 1",
 
-                    "placeholder":"Add your company address"
+                    "placeholder": "Add your company address"
                 },
                 {
                     "type": "text",
-                    "name": "Company Address 1",
-                    "label": "Company Address 1",
-                    "required": true,
-                    "placeholder":"Add your company address"
+                    "name": "Company Address 2",
+                    "label": "Company Address 2",
+                    "required":false,
+                    "placeholder": "Add your company address"
                 },
                 {
                     "type": "select",
                     "name": "City",
                     "label": "City",
-        
-                    options:[
+                    "required": false,
+                    options: [
                         {
-                            "label":"Hyderabad",
-                            "value":"Hyderabad"
+                            "label": "Hyderabad",
+                            "value": "Hyderabad"
                         },
                         {
-                            "label":"Delhi",
-                            "value":"Delhi"
+                            "label": "Delhi",
+                            "value": "Delhi"
                         },
                         {
-                            "label":"Kolkata",
-                            "value":"Kolkata"
+                            "label": "Kolkata",
+                            "value": "Kolkata"
                         }
                     ]
                 },
@@ -275,11 +278,11 @@ const Edit = () => {
                     "type": "select",
                     "name": "Country",
                     "label": "Country",
-                
-                    "options":[
+                    "required": false,
+                    "options": [
                         {
-                            "label":"india",
-                            "value":"india"
+                            "label": "india",
+                            "value": "india"
                         }
                     ]
                 },
@@ -287,14 +290,15 @@ const Edit = () => {
                     "type": "text",
                     "name": "zip Code",
                     "label": "Zip code",
-                    
-                    "placeholder":"Add zip code"
+                    "required": false,
+                    "placeholder": "Add zip code"
                 },
                 {
+                    "required": false,
                     "type": "text",
                     "name": "Contact Link",
                     "label": "Contact Link",
-                    "placeholder":"Add contact link here"
+                    "placeholder": "Add contact link here"
                 }
             ]
         },
@@ -306,7 +310,7 @@ const Edit = () => {
                     "name": "GST Number",
                     "label": "GST Number",
                     "required": true,
-                    "placeholder":"Add GST number "
+                    "placeholder": "Add GST number "
                 },
                 {
                     "type": "file",
@@ -334,53 +338,53 @@ const Edit = () => {
                     "name": "Bank Name",
                     "label": "Bank Name",
                     "required": true,
-                    "placeholder":"Add bank name"
+                    "placeholder": "Add bank name"
                 },
                 {
                     "type": "text",
                     "name": "Account Number",
                     "label": "Account Number",
                     "required": true,
-                    "placeholder":"Add account number"
+                    "placeholder": "Add account number"
                 },
                 {
                     "type": "text",
                     "name": "Account Type",
                     "label": "Account Type",
                     "required": true,
-                    "placeholder":"Add account type"
+                    "placeholder": "Add account type"
                 },
                 {
                     "type": "text",
                     "name": "IFSC/SWIFT/RTGS CODE",
                     "label": "IFSC/SWIFT/RTGS CODE",
                     "required": true,
-                    "placeholder":"Add IFSC/SWIFT/RTGS code here"
+                    "placeholder": "Add IFSC/SWIFT/RTGS code here"
                 },
                 {
                     "type": "text",
                     "name": "Bank Branch Address/ Details",
                     "label": "Bank Branch Address/ Details",
                     "required": true,
-                    "placeholder":"Add branch address here"
+                    "placeholder": "Add branch address here"
                 },
                 {
                     "type": "select",
                     "name": "UPI Details",
                     "label": "UPI Details",
                     "required": true,
-                    "options":[
+                    "options": [
                         {
-                            "label":"Phone pe",
-                            "value":"Phone pe"
+                            "label": "Phone pe",
+                            "value": "Phone pe"
                         },
                         {
-                            "label":"Paytm",
-                            "value":"Paytm"
+                            "label": "Paytm",
+                            "value": "Paytm"
                         },
                         {
-                            "label":"Google pay",
-                            "value":"Google pay"
+                            "label": "Google pay",
+                            "value": "Google pay"
                         }
                     ]
                 }
@@ -399,6 +403,7 @@ const Edit = () => {
                             data={formData[currentStep]}
                             onTabChange={setCurrentStep}
                             currentStep={currentStep}
+                            formsCount={formData.length}
                         />
                     </div>
                     <div className=''>

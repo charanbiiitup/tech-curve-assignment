@@ -5,8 +5,8 @@ import Error from './Error'
 const Radio = ({ field, register, errors }) => {
     return (
         <div className="form-group">
-            <label className="form-label">{field.label} {field.required ? '*' : ''}</label>
-            <div className="">
+            <label className="form-label">{field.label} <span className='text-danger'>{field.required ? '*' : ''}</span></label>
+            <div className={field.columns == 2 ? 'grid2x2' : ''}>
                 {field?.options?.map((option, index) => (
                     <div className="form-radio" key={index}>
                         <input

@@ -10,8 +10,8 @@
         width: fit-content;
 
         .linkNumber {
-            background: #304FFE;
-            border: 1.5px solid #304FFE;
+            background: var(--text-primary);
+            border: 1.5px solid var(--text-primary);
             border-radius: 50%;
             padding: 6px 10px;
             color: white;
@@ -30,11 +30,11 @@
             line-height: 27px;
             padding: 18px 0px;
 
-            color: #304FFE;
+            color: var(--text-primary);
         }
 
         .active {
-            border-bottom: solid 6px #304FFE;
+            border-bottom: solid 6px var(--text-primary);
         }
     }
 
